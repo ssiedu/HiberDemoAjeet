@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 2, 2019 4:45:50 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="mypkg.Student" table="student" catalog="test1" optimistic-lock="version">
+        <id name="rollno" type="int">
+            <column name="rollno" />
+            <generator class="assigned" />
+        </id>
+        <property name="sname" type="string">
+            <column name="sname" length="10" />
+        </property>
+        <property name="marks" type="java.lang.Integer">
+            <column name="marks" />
+        </property>
+    </class>
+</hibernate-mapping>
